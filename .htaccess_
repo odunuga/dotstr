@@ -1,0 +1,5 @@
+lsapi_phpini /home/allbjlsi/dotstream.xyz/user/dotstr/php.ini
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

@@ -17,6 +17,7 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+	    $table->string('refferal_code')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->date('payment')->default(DB::raw('NOW()'));
